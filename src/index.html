@@ -26,15 +26,15 @@
     <aside class="content-aside">
       <div class="blocks-aside">
         <div id="color-block-1" class="color-blocks"></div>
-        <h1 class="blocks-header">Color One</h1>
+        <h1 class="blocks-header">#2962ff</h1>
       </div>
       <div class="blocks-aside">
         <div id="color-block-2" class="color-blocks"></div>
-        <h1 class="blocks-header">Color Two</h1>
+        <h1 class="blocks-header">#ff5722</h1>
       </div>
       <div class="blocks-aside">
         <div id="color-block-3" class="color-blocks"></div>
-        <h1 class="blocks-header">Color Three</h1>
+        <h1 class="blocks-header">#00c853</h1>
       </div>
     </aside>
 
@@ -42,9 +42,8 @@
     <section id="banner-section" class="content-section">
       <div id="section-inside">
         <picture class="main-pic">
-          <source>
-          <source>
-          <img id="banner-img" src="img\banner.jpg" alt="">
+          <source media="(max-width: 560px)" srcset="img\banner-small.png">
+          <img id="banner-img" src="img\banner.png" alt="">
         </picture>
       </div>
     </section>
@@ -54,25 +53,25 @@
       <div id="portfolio-inside" class="section-inside">
         <h1 id="header-portfolio">Feature Last Week</h1>
         <figure class="portfolio-fig">
-          <a href="">
-            <img class="portfolio-img" src="img-src\animals-site.png" alt="">
+          <a href="https://github.com/louisberns/animals-card">
+            <img class="portfolio-img" src="img\animals-site.png" alt="Picture for Animal's site on portfolio">
             <figcaption class="portfolio-caption">Animals site on GitHub</figcaption>
           </a>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>First project on Udacity's Front-end Developer course, take a look on responsiveness.</p>
         </figure>
         <figure class="portfolio-fig">
-          <a href="">
-            <img class="portfolio-img" src="img-src\animals-site.png" alt="">
+          <a href="https://github.com/louisberns/make-a-portfolio">
+            <img class="portfolio-img" src="img\simple-portfolio.png" alt="Simple Portfolio image's">
+            <figcaption class="portfolio-caption">Simple portfolio on GitHub</figcaption>
+          </a>
+          <p>This is the code for the site you're in, a simple CSS/HTML responsive portfolio.</p>
+        </figure>
+        <figure class="portfolio-fig">
+          <a href="https://github.com/louisberns/js-resume-udacity">
+            <img class="portfolio-img" src="img\js-portfolio.png" alt="Image about Javascript portfolio">
             <figcaption class="portfolio-caption">Javascript portfolio on GitHub</figcaption>
           </a>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </figure>
-        <figure class="portfolio-fig">
-          <a href="">
-            <img class="portfolio-img" src="img-src\animals-site.png" alt="">
-            <figcaption class="portfolio-caption">Alphagreen project on GitHub</figcaption>
-          </a>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>A project I'm working on, is a portfolio fecthing data through Javascript.</p>
         </figure>
       </div>
     </section>
@@ -83,12 +82,13 @@
 
     <!--Link para Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-    <div class="footer-inside">
+    <!--<div class="footer-inside">
       <h3></h3>
       <p></p>
       <h3 id="footer-social-header"></h3>
-      <!--Links for Social Media-->
+      <!-Links for Social Media->
       <div class="content-footer-social">
         <figure class="footer-social-fig">
           <a class="footer-social-links" href="">
@@ -109,7 +109,7 @@
           </a>
         </figure>
       </div>
-    </div>
+    </div>-->
   </footer>
 </body>
 </html>
