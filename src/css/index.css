@@ -1,0 +1,219 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+figcaption {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/*Adicionar MEDIA QUERY mobile
+-Inverter ordem entre Aside e Header
+-Alterar 'width' dos conteúdos p/ 100%
+  -Header 100%
+  -Aside 100% + 'display: inline-block;'
+  -Portfolio 100% p/ cada card de conteúdo
+*/
+
+/*Conteúdo Header*/
+.content-header {
+  display: block;
+  position: relative;;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  right: 50px;
+  text-align: right;
+  min-height: 120px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.header-name {
+    margin: 10px 0;
+    vertical-align: bottom;
+    font-family: ;
+}
+
+.header-skill {
+    margin: 0;
+    vertical-align: bottom;
+}
+
+#header-strike {
+  width: 72%;
+  margin-right: 0;
+  border-color: #0D47A1;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/*Conteúdo principal da página*/
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  width: 85%;
+  position: relative;
+  float: right;
+  right: 50px;
+}
+
+.section-inside {
+  box-sizing: border-box;
+}
+
+
+/*Conteúdo aside*/
+.content-aside {
+  display: inline-block;
+  width: 15%;
+  box-sizing: border-box;
+  order: 1;
+}
+
+.blocks-aside {
+  display: block;
+  padding: 0 25px;
+}
+
+.color-blocks {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 5vw solid;
+  border-right: 5vw solid;
+  border-bottom: 10vw solid;
+}
+
+#color-block-1 {
+  border-color: #2962ff;
+}
+
+#color-block-2 {
+  border-color: #ff5722;
+}
+
+#color-block-3 {
+  border-color: #00c853;
+}
+
+.blocks-header {
+  text-align: center;
+  font-size: 18px;
+}
+
+/*Conteúdo banner*/
+#banner-section {
+  order: 2;
+}
+
+.main-pic {
+  display: block;
+  position: relative;
+  width: 85%;
+  float: right;
+}
+
+#banner-img {
+  width: 100%;
+}
+
+/*Conteúdo portfólio*/
+#portfolio-section {
+  order: 3;
+  right: 0;
+  width: 100%;
+}
+
+#portfolio-inside {
+  position: relative;
+  padding: 15px;
+  width: 85%;
+  float: right;
+  top: -40px;
+}
+
+#header-portfolio {
+  padding: 15px 0 0 15px;
+}
+
+.portfolio-fig {
+  display: inline-block;
+  width: 32.5%;
+  margin: 0 auto;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.portfolio-fig a {
+  text-decoration: none;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+.portfolio-caption {
+  color: #424242;
+  font-weight: bold;
+}
+
+/*Conteúdo Media responsivo*/
+@media screen and (min-width: 1030px) {
+  #portfolio-inside {
+    top: 0px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .content-header {
+    right: 10vw;
+  }
+  #header-strike {
+    width: 82%;
+  }
+  .content-aside {
+    width: 100%;
+    order: 2;
+    padding-top: 35px;
+  }
+  .blocks-aside {
+    display: inline-block;
+    padding: 0;
+    width: 31%;
+    margin: 0 auto;
+  }
+  #banner-section {
+    order: 1;
+    width: 90%;
+    right: 0;
+  }
+  .main-pic {
+    width: 92%;
+  }
+  #portfolio-inside {
+    width: 100%;
+    top: 0;
+  }
+  .portfolio-fig {
+    width: 100%;
+  }
+}
