@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
 
@@ -8,7 +9,12 @@
 
   <title>Louis' Portfolio</title>
 
-  <link rel="stylesheet" href="css\index.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--Link para Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
 </head>
 <body>
 
@@ -16,25 +22,25 @@
   <header class="content-header">
     <h1 class="header-name">Louis Berns</h1>
     <h2 class="header-skill">Front-end Developer</h2>
-    <hr id="header-strike">
+    <hr class="header-strike">
   </header>
 
   <!--Conteúdo principal da página-->
-  <content class="main-content">
+  <main class="main-content">
 
     <!--Conteúdo aside, cores referente ao portfólio-->
     <aside class="content-aside">
       <div class="blocks-aside">
         <div id="color-block-1" class="color-blocks"></div>
-        <h1 class="blocks-header">#2962ff</h1>
+        <h2 class="blocks-header">#2962ff</h2>
       </div>
       <div class="blocks-aside">
         <div id="color-block-2" class="color-blocks"></div>
-        <h1 class="blocks-header">#ff5722</h1>
+        <h2 class="blocks-header">#ff5722</h2>
       </div>
       <div class="blocks-aside">
         <div id="color-block-3" class="color-blocks"></div>
-        <h1 class="blocks-header">#00c853</h1>
+        <h2 class="blocks-header">#00c853</h2>
       </div>
     </aside>
 
@@ -42,8 +48,8 @@
     <section id="banner-section" class="content-section">
       <div id="section-inside">
         <picture class="main-pic">
-          <source media="(max-width: 560px)" srcset="img\banner-small.png">
-          <img id="banner-img" src="img\banner.png" alt="">
+          <source media="(max-width: 560px)" srcset="img/banner-small.png">
+          <img id="banner-img" src="img/banner.png" alt="Principal banner image">
         </picture>
       </div>
     </section>
@@ -51,39 +57,34 @@
     <!--Conteúdo Portfólio c/ links-->
     <section id="portfolio-section" class="content-section">
       <div id="portfolio-inside" class="section-inside">
-        <h1 id="header-portfolio">Feature Last Week</h1>
+        <h2 id="header-portfolio">Feature Last Week</h2>
         <figure class="portfolio-fig">
           <a href="https://github.com/louisberns/animals-card">
-            <img class="portfolio-img" src="img\animals-site.png" alt="Picture for Animal's site on portfolio">
+            <img class="portfolio-img" src="img/animals-site.png" alt="Picture for Animal's site on portfolio">
             <figcaption class="portfolio-caption">Animals site on GitHub</figcaption>
           </a>
           <p>First project on Udacity's Front-end Developer course, take a look on responsiveness.</p>
         </figure>
         <figure class="portfolio-fig">
           <a href="https://github.com/louisberns/make-a-portfolio">
-            <img class="portfolio-img" src="img\simple-portfolio.png" alt="Simple Portfolio image's">
+            <img class="portfolio-img" src="img/simple-portfolio.png" alt="Simple Portfolio image's">
             <figcaption class="portfolio-caption">Simple portfolio on GitHub</figcaption>
           </a>
           <p>This is the code for the site you're in, a simple CSS/HTML responsive portfolio.</p>
         </figure>
         <figure class="portfolio-fig">
           <a href="https://github.com/louisberns/js-resume-udacity">
-            <img class="portfolio-img" src="img\js-portfolio.png" alt="Image about Javascript portfolio">
+            <img class="portfolio-img" src="img/js-portfolio.png" alt="Image about Javascript portfolio">
             <figcaption class="portfolio-caption">Javascript portfolio on GitHub</figcaption>
           </a>
           <p>A project I'm working on, is a portfolio fecthing data through Javascript.</p>
         </figure>
       </div>
     </section>
-  </content>
+  </main>
 
   <!--Conteúdo footer, links Social Media, info p/ contato-->
   <footer class="content-footer">
-
-    <!--Link para Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
     <!--<div class="footer-inside">
       <h3></h3>
       <p></p>
